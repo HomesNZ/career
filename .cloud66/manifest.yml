@@ -1,0 +1,21 @@
+production:
+  rails:
+    configuration:
+      ruby_version: 2.2.3
+      vpc_id: vpc-940dadf1
+    server:
+      unique_name: blender
+      subnet_id: subnet-d3a10fa4
+      vendor: aws
+      region: ap-southeast-2
+      size: t2.small
+      root_disk_size: 20
+      availability_zone: ap-southeast-2a
+      extra_packages:
+        - htop
+        - tmux
+        - iotop
+        - postgresql-client-9.3
+  postgresql:
+    configuration:
+      version: 9.3.1

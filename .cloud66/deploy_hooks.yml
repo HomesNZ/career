@@ -1,0 +1,5 @@
+production:
+  after_symlink:
+    - command: cd $STACK_PATH && bundle exec rake db:migrate
+      target: rails
+      run_on: all_servers
